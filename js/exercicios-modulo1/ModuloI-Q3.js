@@ -6,5 +6,5 @@ media = total / array.length
 
 maioresQueMedia = array.filter((value) => value > media)
 
-console.log('Média: ' + media)
+//console.log('Média: ' + media)
 console.log(maioresQueMedia)
