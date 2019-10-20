@@ -7,6 +7,6 @@ const aluno = {
     ]
 }
 
-const getNota = aluno => aluno.notas.valor
+const getNota = nota => nota.valor
 
-console.log(getNota(aluno))
+console.log(aluno.notas.map(getNota))
