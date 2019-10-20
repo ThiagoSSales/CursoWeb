@@ -7,6 +7,6 @@ const fisica = {
     }
 }
 
-const {localizacao:{sala}} = fisica
+const {localizacao: {sala}} = fisica
 
 console.log('Sala: ' + sala)
