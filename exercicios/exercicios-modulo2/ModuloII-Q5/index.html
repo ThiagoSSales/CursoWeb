@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>ModuloII-Q5</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#item1">
+                <img src="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png"
+                    alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <a href="#item1">
+                <img src="https://cdn3.iconfinder.com/data/icons/eightyshades/512/45_Menu-512.png" alt="miniMenu" />
+            </a>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#item1">Item 1</a>
+                </li>
+                <li>
+                    <a href="#item2">Item 2</a>
+                </li>
+                <li>
+                    <a href="#item3">Item 3</a>
+                </li>
+                <li>
+                    <a href="#item4">Item 4</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="botoes">
+            <a href="#Botao1">Botao1</a>
+            <a href="#Botao2" class="botao2">Botao2</a>
+        </aside>
+    </header>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non tortor nisi. Cras sit amet tincidunt nisi,
+        sagittis scelerisque ipsum. Quisque a lacus urna. Donec eu mauris erat. Donec consequat, mi eget tincidunt
+        porttitor, massa sem mattis sapien, in aliquam neque magna id metus. Sed tempus nunc sit amet tempor vestibulum.
+        Mauris ac interdum elit. Suspendisse suscipit ante ante, sit amet convallis metus sagittis eu. Mauris arcu
+        nulla, mollis non varius non, sollicitudin sed ex.
+    </p>
+    <p>
+        Quisque quis arcu fermentum, vehicula nulla vitae, mattis nulla. In ac diam quis urna pharetra sagittis vel
+        aliquam enim. Praesent nibh dolor, venenatis et feugiat ac, ultrices sit amet justo. Aenean ac fermentum lectus,
+        fermentum vulputate lacus. Sed ac nisl ut tortor laoreet vehicula. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Pellentesque lacinia efficitur metus eget auctor. Nulla viverra tristique arcu sodales
+        lobortis. Mauris cursus orci massa, a ornare risus rhoncus sit amet.
+    </p><p>
+        Praesent sed facilisis nunc. Donec feugiat justo a malesuada fermentum. Pellentesque vestibulum suscipit urna,
+        sed rutrum lacus placerat vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+        Curae; Aliquam vitae leo lacus. Vivamus gravida dapibus felis quis lobortis. Nullam sed posuere risus. Aliquam
+        erat volutpat.
+    </p><p>
+        Nulla iaculis fringilla nunc quis hendrerit. Fusce ac massa ac nisi lobortis vestibulum ornare ultricies purus.
+        Aenean et faucibus metus, non maximus magna. Sed commodo sagittis velit nec egestas. Phasellus semper justo
+        libero, vitae vulputate nulla pharetra gravida. Quisque enim ante, iaculis ut dolor eget, ornare rutrum metus.
+        Praesent a tellus ut lacus facilisis elementum. Curabitur tempus lectus eget erat porta iaculis. Phasellus
+        rutrum luctus aliquam. Sed turpis mi, euismod a nulla sit amet, egestas ullamcorper felis. Ut interdum blandit
+        lectus, at semper neque dapibus in. Suspendisse id tempus nibh, id egestas quam. Etiam ut urna a massa
+        pellentesque porta vitae a sapien. In eget odio in massa venenatis tempus. Integer vehicula, ipsum in suscipit
+        aliquam, arcu leo lacinia ex, in finibus ante lorem et odio.
+    </p><p>
+        Donec fermentum ipsum in ornare tincidunt. Donec pulvinar justo neque, sed facilisis enim iaculis sed. Morbi
+        mollis orci quis sapien congue, ut sodales magna posuere. Cras ornare elit luctus tempus ullamcorper. Maecenas
+        pulvinar posuere enim, vel commodo quam rhoncus sed. Nunc molestie justo eget arcu aliquam, nec ultricies odio
+        blandit. Quisque efficitur nulla hendrerit egestas tincidunt. Ut volutpat ultrices eros id consectetur. Proin eu
+        rhoncus ipsum. Ut non maximus nibh.
+    </p>
+
+    <script>
+        window.onhashchange = function (e) {
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
+            const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
+            oldLink && oldLink.classList.remove('selected')
+            newLink && newLink.classList.add('selected')
+        }
+    </script>
+</body>
+
+</html>
