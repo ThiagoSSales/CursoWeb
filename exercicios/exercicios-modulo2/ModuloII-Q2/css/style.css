@@ -1,0 +1,48 @@
+body {
+    font-size: 40px;
+}
+
+.cabecalho {
+    display: inline-block;
+    background-color: orangered;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    width: 50%;
+    line-height: 80px;
+}
+
+.menu {
+    float: right;
+    width: 50%;
+    height: 100%;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+.menu ul {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0px 30px;
+    list-style-type: none;
+    width: 25%
+}
+
+.menu li:hover {
+    background-color: rgb(175, 57, 14);
+}
