@@ -1,0 +1,55 @@
+html, body {
+    margin: 5px;
+    height: calc(100% - 40px);
+    background-color: lightgray;
+}
+
+body {
+    font-size: 30px;
+    display: grid;
+    grid-template-rows: 15% 40% 40% 5%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+div, footer{
+    background-color: purple;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+}
+
+.cabecalho {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    align-items: stretch;
+    background-color: lightgray;
+}
+
+.cabecalho div {
+    height: 100%;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.menuLateral {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+}
+
+.logo {
+    width: 15%;
+    margin-left: 0px;
+}
+
+.menu {
+    width: 85%;
+    margin-right: 0px;
+}
