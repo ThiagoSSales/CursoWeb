@@ -1,0 +1,34 @@
+div {
+    font-size: 60px;
+    padding: 30px;
+    border: solid 5px #222;
+    color: rgb(255, 255, 255);
+}
+
+.relative {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    background-color: darkgoldenrod;
+}
+
+.fixed {
+    position: fixed;
+    left: 0px;
+    bottom: 10px;
+    background-color: darkgreen;
+}
+
+.absolute {
+    position: absolute;
+    top: 400px;
+    right: 30px;
+    background-color: darksalmon;
+}
+
+.sticky {
+    position: -webkit-sticky; /* safari */
+    position: sticky;
+    top: 50px;
+    background-color: deeppink;
+}
