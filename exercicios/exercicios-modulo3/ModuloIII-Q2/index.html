@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>ModuloIII-Q2</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <script>
+
+        const carros = [
+            { nome: 'Cronos', ano: 2020, valor: 54990 },
+            { nome: 'Toro', ano: 2020, valor: 76900 },
+            { nome: 'Siena', ano: 2020, valor: 37794 }
+        ]
+
+        function tableCreate() {
+            var body = document.body,
+                tbl = document.createElement('table');
+
+            for (var linha = 0; linha < 3; linha++) {
+                var tr = tbl.insertRow();
+                for (var coluna = 0; coluna < 3; coluna++) {
+
+                    var td = tr.insertCell();
+                    
+                    if(coluna == 0){
+                        td.appendChild(document.createTextNode(carros[linha].nome));
+                    }
+
+                    if(coluna == 1){
+                        td.appendChild(document.createTextNode(carros[linha].ano));
+                    }
+
+                    if(coluna == 2){
+                        td.appendChild(document.createTextNode(carros[linha].valor));
+                    }
+
+                }
+            }
+            body.appendChild(tbl);
+        }
+        tableCreate();
+    </script>
+
+</body>
+
+</html>
